@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JogodoQuiz.MainPage"
+             Shell.NavBarIsVisible="false">
+
+
+ <Grid>
+        <Grid.RowDefinitions>
+         <RowDefinition Height="*"/>
+         <RowDefinition Height="100"/>
+         <RowDefinition Height="50"/>
+         <RowDefinition Height="50"/>
+         <RowDefinition Height="50"/>
+         <RowDefinition Height="50"/>
+         <RowDefinition Height="50"/>
+         <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+         <ColumnDefinition Width="*"/>
+         <ColumnDefinition Width="*"/>
+         <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image  Source="logo.jpg"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/>
+
+        <Frame  x:Name="framePerguntas"
+                HeightRequest="100"
+                BorderColor="Black"
+                BackgroundColor="#fff9e8"
+                Margin="10"
+                CornerRadius="20"
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="3">
+                
+            <Label  x:Name="Perguntas"
+                    TextColor="Black"
+                    HorizontalOptions="Center"
+                    FontSize="14"/>
+        </Frame>
+
+        <Button x:Name="Resposta01"
+                Margin="10,0,10,10"
+                BackgroundColor="#fff9e8"
+                BorderWidth="1"
+                BorderColor="Black"
+                TextColor="Black"
+                FontSize="12"
+                CornerRadius="15"
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/>
+
+        <Button x:Name="Resposta02"
+                Margin="10,0,10,10"
+                BackgroundColor="#fff9e8"
+                BorderWidth="1"
+                BorderColor="Black"
+                TextColor="Black"
+                FontSize="12"
+                CornerRadius="15"
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/>
+
+        <Button x:Name="Resposta03"
+                Margin="10,0,10,10"
+                BackgroundColor="#fff9e8"
+                BorderWidth="1"
+                BorderColor="Black"
+                TextColor="Black"
+                FontSize="12"
+                CornerRadius="15"
+                Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/>
+        
+        <Button x:Name="Resposta04"
+                Margin="10,0,10,10"
+                BackgroundColor="#fff9e8"
+                BorderWidth="1"
+                BorderColor="Black"
+                TextColor="Black"
+                FontSize="12"
+                CornerRadius="15"
+                Grid.Row="5"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/>
+
+        <Button x:Name="Resposta05"
+                Margin="10,0,10,10"
+                BackgroundColor="#fff9e8"
+                BorderWidth="1"
+                BorderColor="Black"
+                TextColor="Black"
+                FontSize="12"
+                CornerRadius="15"
+                Grid.Row="6"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/>
+
+        <Button x:Name="Ajuda01"
+                Margin="10"
+                Text="Cartas"
+                BackgroundColor="#fff9e8"
+                BorderColor="Black"
+                BorderWidth="2"
+                TextColor="Black"
+                Grid.Row="7"
+                Grid.Column="0"/>
+
+        <Button x:Name="Ajuda02"
+                Margin="10"
+                Text="Eliminar 1"
+                BackgroundColor="#fff9e8"
+                BorderWidth="2"
+                BorderColor="Black"
+                TextColor="Black"
+                Grid.Row="7"
+                Grid.Column="1"/>
+
+        <Button x:Name="Ajuda03"
+                Margin="10"
+                Text="Universitários"
+                BackgroundColor="#fff9e8"
+                BorderWidth="2"
+                BorderColor="Black"
+                TextColor="Black"
+                Grid.Row="7"
+                Grid.Column="2"/>
+
+
+ </Grid>
+
+</ContentPage>
