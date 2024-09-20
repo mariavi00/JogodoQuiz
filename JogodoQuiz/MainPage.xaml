@@ -38,8 +38,9 @@
                 CornerRadius="20"
                 Grid.Row="1"
                 Grid.Column="0"
-                Grid.ColumnSpan="3">
-                
+                Grid.ColumnSpan="3"
+                >
+
             <Label  x:Name="Perguntas"
                     TextColor="Black"
                     HorizontalOptions="Center"
@@ -47,6 +48,7 @@
         </Frame>
 
         <Button x:Name="Resposta01"
+                Clicked="Resposta01Clicado"
                 Margin="10,0"
                 Padding="0"
                 BackgroundColor="#6c8abd"
@@ -60,6 +62,7 @@
                 Grid.ColumnSpan="3"/>
 
         <Button x:Name="Resposta02"
+                Clicked="Resposta02Clicado"
                 Margin="10,0"
                 Padding="0"
                 BackgroundColor="#6c8abd"
@@ -73,6 +76,7 @@
                 Grid.ColumnSpan="3"/>
 
         <Button x:Name="Resposta03"
+                Clicked="Resposta03Clicado"
                 Margin="10,0"
                 Padding="0"
                 BackgroundColor="#6c8abd"
@@ -86,6 +90,7 @@
                 Grid.ColumnSpan="3"/>
         
         <Button x:Name="Resposta04"
+                Clicked="Resposta04Clicado"
                 Margin="10,0"
                 Padding="0"
                 BackgroundColor="#6c8abd"
@@ -99,6 +104,7 @@
                 Grid.ColumnSpan="3"/>
 
         <Button x:Name="Resposta05"
+                Clicked="Resposta05Clicado"
                 Margin="10,0"
                 Padding="0"
                 BackgroundColor="#6c8abd"
