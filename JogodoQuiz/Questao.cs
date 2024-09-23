@@ -21,6 +21,17 @@ public class Questao
       btnResposta03.Text = resposta3;
       btnResposta04.Text = resposta4;
       btnResposta05.Text = resposta5;
+
+    btnResposta01.BackgroundColor = Colors.White;
+    btnResposta01.TextColor       = Colors.Black;
+    btnResposta02.BackgroundColor = Colors.White;
+    btnResposta02.TextColor       = Colors.Black;
+    btnResposta03.BackgroundColor = Colors.White;
+    btnResposta03.TextColor       = Colors.Black;
+    btnResposta04.BackgroundColor = Colors.White;
+    btnResposta04.TextColor       = Colors.Black;
+    btnResposta05.BackgroundColor = Colors.White;
+    btnResposta05.TextColor       = Colors.Black;
     }
 
     private Label labelPergunta; 
@@ -62,6 +73,8 @@ public class Questao
         }
         else
         {
+            var btn = Qualbtn (RR);
+                btn.BackgroundColor = Colors.Red;
             return false;
         }
     }
