@@ -38,7 +38,7 @@
 
             <Label x:Name="LabelPont"
                    HorizontalTextAlignment="Start"
-                   Text="Pontuação:"
+                   Text="Pontuação:R$0"
                    TextColor="Black"
                    HorizontalOptions="Fill"
                    FontSize="14"/>
@@ -55,7 +55,7 @@
                 Grid.Column="2">
 
             <Label x:Name="LabelNivel"
-                   Text="Nível:"
+                   Text="Nível:1"
                    TextColor="Black"
                    HorizontalTextAlignment="Start"
                    HorizontalOptions="Fill"

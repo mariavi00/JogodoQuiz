@@ -49,6 +49,7 @@ public class Gerenciador
 
     public async void VerificaResposta(int RR)
     {
+        
         if (QuestaoAtual.VerificaResposta(RR))
         {
             await Task.Delay(1000);
@@ -63,12 +64,13 @@ public class Gerenciador
             await App.Current.MainPage.DisplayAlert("Fim", "Você errou", "Ok");
             Inicializar();
         }
+        LabelPont.Text="Pontuação:R$"+Pontuacao.ToString();
+        LabelNivel.Text="Nível:"+NivelAtual.ToString();
     }
 
     void ProximaQuestao()
     {
-        LabelPont.Text=Pontuacao.ToString();
-        LabelNivel.Text=NivelAtual.ToString();
+        
         var numAleat=Random.Shared.Next(0, ListaQuestoes.Count);
         while (ListaQuestoesRespondidas.Contains(numAleat))
             numAleat=Random.Shared.Next(0, ListaQuestoes.Count);
@@ -80,6 +82,8 @@ public class Gerenciador
 
     void Inicializar()
     {
+        LabelPont.Text="Pontuação:R$"+Pontuacao.ToString();
+        LabelNivel.Text="Nível:"+NivelAtual.ToString();
         Pontuacao=0;
         NivelAtual=1;
         ProximaQuestao();
