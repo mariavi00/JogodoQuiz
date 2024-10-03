@@ -157,8 +157,9 @@
                 Grid.ColumnSpan="3"/>
 
         <Button x:Name="Ajuda01"
+                Clicked="AjudaPularClicado"
                 Margin="10,0,10,10"
-                Text="Cartas"
+                Text="Pular"
                 BackgroundColor="White"
                 BorderColor="Black"
                 BorderWidth="2"
@@ -167,8 +168,9 @@
                 Grid.Column="0"/>
 
         <Button x:Name="Ajuda02"
+                Clicked="AjudaTirarClicado"
                 Margin="10,0,10,10"
-                Text="Eliminar 1"
+                Text="Eliminar 3"
                 BackgroundColor="White"
                 BorderWidth="2"
                 BorderColor="Black"
