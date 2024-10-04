@@ -38,7 +38,7 @@ public partial class MainPage : ContentPage
 	void AjudaTirarClicado(object s, EventArgs e)
 	{
 		var ajuda=new RetiraErradas();
-		ajuda.ConfiguraDesenho(btnResp01, btnResp02, btnResposta03, btnResposta04, btnResposta05);
+		ajuda.ConfiguraDesenho(Resposta01, Resposta02, Resposta03, Resposta04, Resposta05);
 		ajuda.RealizaAjuda(gerenciador.GetQuestaoAtual());
 		(s as Button).IsVisible=false;
 	}
@@ -46,6 +46,14 @@ public partial class MainPage : ContentPage
 	void AjudaPularClicado(object s, EventArgs e)
 	{
 		gerenciador.ProximaQuestao();
+		(s as Button).IsVisible=false;
+	}
+
+	void AjudaUniversitariosClicado(object s, EventArgs e)
+	{
+		var ajuda=new Universitarios();
+		ajuda.ConfiguraDesenho(Resposta01, Resposta02, Resposta03, Resposta04, Resposta05);
+		ajuda.RealizaAjuda(gerenciador.GetQuestaoAtual());
 		(s as Button).IsVisible=false;
 	}
 }

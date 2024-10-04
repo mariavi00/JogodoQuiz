@@ -23,6 +23,12 @@ public class Questao: IEquatable<Questao>
       btnResposta04.Text = resposta4;
       btnResposta05.Text = resposta5;
 
+      btnResposta01.IsVisible = true;
+      btnResposta02.IsVisible = true;
+      btnResposta03.IsVisible = true;
+      btnResposta04.IsVisible = true;
+      btnResposta05.IsVisible = true;
+
     btnResposta01.BackgroundColor = Colors.White;
     btnResposta01.TextColor       = Colors.Black;
     btnResposta02.BackgroundColor = Colors.White;
@@ -98,7 +104,7 @@ public class Questao: IEquatable<Questao>
 
     public bool Equals(Questao q)
       {
-        return this.nivelpergunta==q.nivelpergunta;
+        return this.nivelpergunta==q.nivelpergunta && this.pergunta==q.pergunta;
       }
 
 }

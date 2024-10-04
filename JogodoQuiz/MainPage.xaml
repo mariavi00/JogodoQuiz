@@ -179,6 +179,7 @@
                 Grid.Column="1"/>
 
         <Button x:Name="Ajuda03"
+                Clicked="AjudaUniversitariosClicado"
                 Margin="10,0,10,10"
                 Text="Universitários"
                 BackgroundColor="White"
