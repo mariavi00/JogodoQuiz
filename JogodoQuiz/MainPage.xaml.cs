@@ -3,6 +3,8 @@
 public partial class MainPage : ContentPage
 {
 	Gerenciador gerenciador;
+	int PularClicado;
+
 	public MainPage()
 	{
 		InitializeComponent();
@@ -45,8 +47,16 @@ public partial class MainPage : ContentPage
 
 	void AjudaPularClicado(object s, EventArgs e)
 	{
-		gerenciador.ProximaQuestao();
-		(s as Button).IsVisible=false;
+		if (PularClicado<3)
+		{
+			gerenciador.ProximaQuestao();
+			(s as Button).IsVisible=true;
+		}
+		else
+		{
+			gerenciador.ProximaQuestao();
+			(s as Button).IsVisible=false;
+		}
 	}
 
 	void AjudaUniversitariosClicado(object s, EventArgs e)
