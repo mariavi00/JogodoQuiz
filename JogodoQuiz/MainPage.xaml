@@ -159,7 +159,7 @@
         <Button x:Name="Ajuda01"
                 Clicked="AjudaPularClicado"
                 Margin="10,0,10,10"
-                Text="Pular"
+                Text="Pular 3x"
                 BackgroundColor="White"
                 BorderColor="Black"
                 BorderWidth="2"

@@ -3,7 +3,8 @@
 public partial class MainPage : ContentPage
 {
 	Gerenciador gerenciador;
-	int PularClicado;
+	int PularClicado=0;
+	int Vezes=2;
 
 	public MainPage()
 	{
@@ -47,17 +48,18 @@ public partial class MainPage : ContentPage
 
 	void AjudaPularClicado(object s, EventArgs e)
 	{
-		if (PularClicado<3)
-		{
-			gerenciador.ProximaQuestao();
-			(s as Button).IsVisible=true;
-		}
+		if (PularClicado==2)
+			(s as Button).IsVisible=false;
 		else
 		{
 			gerenciador.ProximaQuestao();
-			(s as Button).IsVisible=false;
+			PularClicado++;
 		}
+
+		Ajuda01.Text="Pular "+Vezes.ToString()+"x";
+		Vezes--;
 	}
+
 
 	void AjudaUniversitariosClicado(object s, EventArgs e)
 	{
